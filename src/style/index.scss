@@ -1,0 +1,43 @@
+@import "./transition";
+@import "./element-plus";
+@import "./sidebar";
+@import "./dark";
+
+/* 自定义全局 CssVar */
+:root {
+  /* 左侧菜单展开、收起动画时长 */
+  --pure-transition-duration: 0.3s;
+}
+
+/* 灰色模式 */
+.html-grey {
+  filter: grayscale(100%);
+}
+
+/* 色弱模式 */
+.html-weakness {
+  filter: invert(80%);
+}
+
+.main-continer {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  fill: currentcolor;
+}
+
+body {
+  font-family: PingFangSC-Regular, Helvetica, BlinkMacSystemFont, Arial, Verdana,
+    "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.custom-drawer .el-drawer__body {
+  background: #f4f5f7;
+}
